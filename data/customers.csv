@@ -1,0 +1,6 @@
+customer_id,name,city,state,signup_date,device_type
+1,Rahul,Hyderabad,Telangana,2024-01-10,Mobile
+2,Anjali,Bangalore,Karnataka,2024-02-15,Laptop
+3,Ravi,Chennai,Tamil Nadu,2024-03-20,Tablet
+4,Meera,Mumbai,Maharashtra,2024-04-05,Mobile
+5,Karan,Delhi,Delhi,2024-05-12,Laptop

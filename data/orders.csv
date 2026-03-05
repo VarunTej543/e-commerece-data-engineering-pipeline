@@ -1,0 +1,6 @@
+order_id,customer_id,product_id,order_date,quantity,payment_method,order_status
+1001,1,101,2024-06-01,1,UPI,Delivered
+1002,2,103,2024-06-02,2,Card,Delivered
+1003,3,104,2024-06-03,1,COD,Shipped
+1004,4,102,2024-06-04,1,UPI,Delivered
+1005,5,105,2024-06-05,3,Card,Processing
