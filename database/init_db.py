@@ -44,6 +44,17 @@ def initialize_database():
     );
     """)
 
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS events (
+    event_id INT PRIMARY KEY,
+    customer_id INT,
+    product_id INT,
+    event_type TEXT,
+    timestamp TIMESTAMP,
+    session_id TEXT
+    );
+    """)
+
     conn.commit()
     cursor.close()
     conn.close()
