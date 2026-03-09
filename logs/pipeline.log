@@ -1,0 +1,40 @@
+2026-03-09 11:55:49,373 - INFO - Pipeline started
+2026-03-09 11:55:49,373 - INFO - Starting load_data.py
+2026-03-09 11:55:49,442 - ERROR - Error running load_data.py
+2026-03-09 11:55:49,443 - INFO - Starting build_star_schema.py
+2026-03-09 11:55:49,520 - ERROR - Error running build_star_schema.py
+2026-03-09 11:55:49,520 - INFO - Starting load_events.py
+2026-03-09 11:55:49,609 - ERROR - Error running load_events.py
+2026-03-09 11:55:49,610 - INFO - Pipeline completed
+2026-03-09 11:56:40,885 - INFO - Pipeline started
+2026-03-09 11:56:40,885 - INFO - Starting load_data.py
+2026-03-09 11:56:40,938 - ERROR - Error running load_data.py
+2026-03-09 11:56:40,939 - INFO - Starting build_star_schema.py
+2026-03-09 11:56:40,995 - ERROR - Error running build_star_schema.py
+2026-03-09 11:56:40,996 - INFO - Starting load_events.py
+2026-03-09 11:56:41,052 - ERROR - Error running load_events.py
+2026-03-09 11:56:41,052 - INFO - Pipeline completed
+2026-03-09 11:57:53,993 - INFO - Pipeline started
+2026-03-09 11:57:53,993 - INFO - Starting load_data.py
+2026-03-09 11:58:00,884 - ERROR - Error running load_data.py
+2026-03-09 11:58:00,885 - INFO - Starting build_star_schema.py
+2026-03-09 11:58:00,949 - ERROR - Error running build_star_schema.py
+2026-03-09 11:58:00,949 - INFO - Starting load_events.py
+2026-03-09 11:58:02,807 - INFO - Finished load_events.py
+2026-03-09 11:58:02,807 - INFO - Pipeline completed
+2026-03-09 11:58:20,761 - INFO - Pipeline started
+2026-03-09 11:58:20,761 - INFO - Starting load_data.py
+2026-03-09 11:58:22,143 - ERROR - Error running load_data.py
+2026-03-09 11:58:22,143 - INFO - Starting build_star_schema.py
+2026-03-09 11:58:23,812 - INFO - Finished build_star_schema.py
+2026-03-09 11:58:23,812 - INFO - Starting load_events.py
+2026-03-09 11:58:25,206 - INFO - Finished load_events.py
+2026-03-09 11:58:25,206 - INFO - Pipeline completed
+2026-03-09 12:00:28,000 - INFO - Pipeline started
+2026-03-09 12:00:28,000 - INFO - Starting load_data.py
+2026-03-09 12:00:29,893 - INFO - Finished load_data.py
+2026-03-09 12:00:29,893 - INFO - Starting build_star_schema.py
+2026-03-09 12:00:31,578 - INFO - Finished build_star_schema.py
+2026-03-09 12:00:31,579 - INFO - Starting load_events.py
+2026-03-09 12:00:33,116 - INFO - Finished load_events.py
+2026-03-09 12:00:33,116 - INFO - Pipeline completed

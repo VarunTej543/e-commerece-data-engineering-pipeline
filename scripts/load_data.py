@@ -14,9 +14,9 @@ orders = pd.read_csv(orders_path)
 
 engine = create_engine("postgresql://postgres:Earthly009#@localhost:5432/ecommerce_db")
 
-customers.to_sql("customers", engine, if_exists="append", index=False)
-products.to_sql("products", engine, if_exists="append", index=False)
-orders.to_sql("orders", engine, if_exists="append", index=False)
+customers.to_sql("customers", engine, if_exists="replace", index=False)
+products.to_sql("products", engine, if_exists="replace", index=False)
+orders.to_sql("orders", engine, if_exists="replace", index=False)
 
 print("✅ Data successfully loaded!")
 
