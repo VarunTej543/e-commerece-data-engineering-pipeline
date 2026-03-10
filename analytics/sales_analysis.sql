@@ -1,19 +1,23 @@
 -- Total Revenue
 SELECT SUM(total_amount) AS total_revenue
-FROM fact_sales;
+FROM fact_orders;
 
--- Top Selling Products
+-- Revenue by Product
 SELECT
-    product_id,
-    SUM(quantity) AS total_sold
-FROM fact_sales
-GROUP BY product_id
-ORDER BY total_sold DESC;
+    p.product_name,
+    SUM(f.total_amount) AS revenue
+FROM fact_orders f
+JOIN dim_products p
+ON f.product_id = p.product_id
+GROUP BY p.product_name
+ORDER BY revenue DESC;
 
--- Monthly Revenue
+-- Revenue by City
 SELECT
-    DATE_TRUNC('month', order_date) AS month,
-    SUM(total_amount) AS revenue
-FROM fact_sales
-GROUP BY month
-ORDER BY month;
+    c.city,
+    SUM(f.total_amount) AS revenue
+FROM fact_orders f
+JOIN dim_customers c
+ON f.customer_id = c.customer_id
+GROUP BY c.city
+ORDER BY revenue DESC;
