@@ -38,3 +38,77 @@
 2026-03-09 12:00:31,579 - INFO - Starting load_events.py
 2026-03-09 12:00:33,116 - INFO - Finished load_events.py
 2026-03-09 12:00:33,116 - INFO - Pipeline completed
+2026-03-13 01:02:53,298 - INFO - Pipeline started
+2026-03-13 01:02:53,298 - INFO - Starting load_data.py
+2026-03-13 01:03:00,111 - ERROR - Error running load_data.py
+2026-03-13 01:03:00,112 - INFO - Starting build_star_schema.py
+2026-03-13 01:03:02,367 - INFO - Finished build_star_schema.py
+2026-03-13 01:03:02,367 - INFO - Starting load_events.py
+2026-03-13 01:03:04,085 - INFO - Finished load_events.py
+2026-03-13 01:03:04,085 - INFO - Pipeline completed
+2026-03-13 01:03:11,930 - INFO - Pipeline started
+2026-03-13 01:03:11,931 - INFO - Starting load_data.py
+2026-03-13 01:03:13,352 - ERROR - Error running load_data.py
+2026-03-13 01:03:13,352 - INFO - Starting build_star_schema.py
+2026-03-13 01:03:15,077 - INFO - Finished build_star_schema.py
+2026-03-13 01:03:15,077 - INFO - Starting load_events.py
+2026-03-13 01:03:16,533 - INFO - Finished load_events.py
+2026-03-13 01:03:16,533 - INFO - Pipeline completed
+2026-03-13 01:05:06,784 - INFO - Pipeline started
+2026-03-13 01:05:06,784 - INFO - Starting load_data.py
+2026-03-13 01:05:08,295 - ERROR - Error running load_data.py
+2026-03-13 01:05:08,296 - INFO - Starting build_star_schema.py
+2026-03-13 01:05:09,888 - INFO - Finished build_star_schema.py
+2026-03-13 01:05:09,889 - INFO - Starting load_events.py
+2026-03-13 01:05:11,334 - INFO - Finished load_events.py
+2026-03-13 01:05:11,334 - INFO - Pipeline completed
+2026-03-13 01:07:58,541 - INFO - Pipeline started
+2026-03-13 01:07:58,541 - INFO - Starting load_data.py
+2026-03-13 01:08:00,714 - ERROR - Error running load_data.py
+2026-03-13 01:08:00,714 - INFO - Starting build_star_schema.py
+2026-03-13 01:08:02,524 - INFO - Finished build_star_schema.py
+2026-03-13 01:08:02,524 - INFO - Starting load_events.py
+2026-03-13 01:08:04,108 - ERROR - Error running load_events.py
+2026-03-13 01:08:04,108 - INFO - Pipeline completed
+2026-03-24 20:21:47,848 - INFO - Running load_data.py
+2026-03-24 20:21:51,572 - ERROR - Error in load_data.py
+2026-03-24 20:21:51,572 - INFO - Running build_star_schema.py
+2026-03-24 20:21:51,989 - ERROR - Error in build_star_schema.py
+2026-03-24 20:21:51,989 - INFO - Running load_events.py
+2026-03-24 20:21:53,027 - INFO - Finished load_events.py
+2026-03-24 20:21:53,027 - INFO - Pipeline completed
+2026-03-24 20:24:49,833 - INFO - Running load_data.py
+2026-03-24 20:24:49,886 - ERROR - Error in load_data.py
+2026-03-24 20:24:49,886 - INFO - Running build_star_schema.py
+2026-03-24 20:24:50,316 - ERROR - Error in build_star_schema.py
+2026-03-24 20:24:50,316 - INFO - Running load_events.py
+2026-03-24 20:24:51,163 - INFO - Finished load_events.py
+2026-03-24 20:24:51,163 - INFO - Pipeline completed
+2026-03-24 20:29:44,730 - INFO - Running load_data.py
+2026-03-24 20:29:45,553 - ERROR - Error in load_data.py
+2026-03-24 20:29:45,553 - INFO - Running build_star_schema.py
+2026-03-24 20:29:45,966 - ERROR - Error in build_star_schema.py
+2026-03-24 20:29:45,966 - INFO - Running load_events.py
+2026-03-24 20:29:46,756 - ERROR - Error in load_events.py
+2026-03-24 20:29:46,756 - INFO - Pipeline completed
+2026-03-24 22:21:43,627 - INFO - Running load_data.py
+2026-03-24 22:21:46,804 - ERROR - Error in load_data.py
+2026-03-24 22:21:46,804 - INFO - Running build_star_schema.py
+2026-03-24 22:21:47,399 - ERROR - Error in build_star_schema.py
+2026-03-24 22:21:47,400 - INFO - Running load_events.py
+2026-03-24 22:21:48,572 - INFO - Finished load_events.py
+2026-03-24 22:21:48,572 - INFO - Pipeline completed
+2026-03-24 22:25:25,652 - INFO - Running load_data.py
+2026-03-24 22:25:26,436 - ERROR - Error in load_data.py
+2026-03-24 22:25:26,436 - INFO - Running build_star_schema.py
+2026-03-24 22:25:26,816 - ERROR - Error in build_star_schema.py
+2026-03-24 22:25:26,817 - INFO - Running load_events.py
+2026-03-24 22:25:27,666 - INFO - Finished load_events.py
+2026-03-24 22:25:27,667 - INFO - Pipeline completed
+2026-03-24 22:27:17,026 - INFO - Running load_data.py
+2026-03-24 22:27:17,858 - ERROR - Error in load_data.py
+2026-03-24 22:27:17,858 - INFO - Running build_star_schema.py
+2026-03-24 22:27:18,259 - ERROR - Error in build_star_schema.py
+2026-03-24 22:27:18,259 - INFO - Running load_events.py
+2026-03-24 22:27:19,093 - INFO - Finished load_events.py
+2026-03-24 22:27:19,094 - INFO - Pipeline completed

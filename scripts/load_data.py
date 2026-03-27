@@ -1,23 +1,47 @@
 import pandas as pd
-from sqlalchemy import create_engine
-import os
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-customers_path = os.path.join(BASE_DIR, "data", "customers.csv")
-products_path = os.path.join(BASE_DIR, "data", "products.csv")
-orders_path = os.path.join(BASE_DIR, "data", "orders.csv")
-
-customers = pd.read_csv(customers_path)
-products = pd.read_csv(products_path)
-orders = pd.read_csv(orders_path)
+from sqlalchemy import create_engine, text
 
 engine = create_engine("postgresql://postgres:Earthly009#@localhost:5432/ecommerce_db")
 
-customers.to_sql("customers", engine, if_exists="replace", index=False)
-products.to_sql("products", engine, if_exists="replace", index=False)
-orders.to_sql("orders", engine, if_exists="replace", index=False)
+# Use forward slashes ✅
+customers = pd.read_csv("../data/customers.csv")
+products = pd.read_csv("../data/products.csv")
+orders = pd.read_csv("../data/orders.csv")
 
-print("✅ Data successfully loaded!")
+price_map = dict(zip(products.product_id, products.price))
 
-print(customers_path)
+with engine.connect() as conn:
+
+    # Customers
+    for _, row in customers.iterrows():
+        conn.execute(text("""
+        INSERT INTO customers VALUES (:customer_id, :name, :city, :state, :signup_date, :device_type)
+        ON CONFLICT (customer_id) DO NOTHING
+        """), dict(row))
+
+    # Products
+    for _, row in products.iterrows():
+        conn.execute(text("""
+        INSERT INTO products VALUES (:product_id, :category, :price)
+        ON CONFLICT (product_id) DO NOTHING
+        """), dict(row))
+
+    # Orders
+    for _, row in orders.iterrows():
+        total_amount = row["quantity"] * price_map.get(row["product_id"], 0)
+
+        conn.execute(text("""
+        INSERT INTO orders VALUES (:order_id, :customer_id, :product_id, :order_date, :quantity, :total_amount)
+        ON CONFLICT (order_id) DO NOTHING
+        """), {
+            "order_id": row["order_id"],
+            "customer_id": row["customer_id"],
+            "product_id": row["product_id"],
+            "order_date": row["order_date"],
+            "quantity": row["quantity"],
+            "total_amount": total_amount
+        })
+
+    conn.commit()
+
+print("Data loaded successfully")

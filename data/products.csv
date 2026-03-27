@@ -1,6 +1,6 @@
-product_id,category,price,brand,rating
-101,Electronics,25000,Samsung,4.5
-102,Electronics,18000,Redmi,4.2
-103,Clothing,1200,Nike,4.6
-104,Clothing,900,Adidas,4.4
-105,Home,3500,Philips,4.3
+product_id,category,price
+101,Electronics,25000
+102,Electronics,18000
+103,Clothing,1200
+104,Clothing,900
+105,Home,3500

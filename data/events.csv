@@ -1,7 +1,4 @@
-event_id,customer_id,product_id,event_type,timestamp,session_id
-1,1,101,view,2024-06-01 10:00:00,S1
-2,1,101,add_to_cart,2024-06-01 10:05:00,S1
-3,1,101,purchase,2024-06-01 10:10:00,S1
-4,2,103,view,2024-06-02 11:00:00,S2
-5,2,103,add_to_cart,2024-06-02 11:05:00,S2
-6,3,104,view,2024-06-03 12:00:00,S3
+event_id,customer_id,event_type,timestamp
+1,1,view,2024-06-01
+2,2,click,2024-06-02
+3,3,purchase,2024-06-03
